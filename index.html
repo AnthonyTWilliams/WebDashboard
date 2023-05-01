@@ -12,65 +12,79 @@
 
   </head>
 
-
   <body>
 
-        <!-- Clock Function Div -->
-        <div class="clockFunction">
-          <div class="container">
-              <span id="hours">00</span>
-              <span>:</span>
-              <span id="minutes">00</span>
-              <span>:</span>
-              <span id="seconds">00</span>
-              <span id="session">AM</span>
-          </div>
-      </div>
-    
+    <div class="parent">
 
-    <!-- Google search function div -->
-    <div class="gcse-search">
+        <div class="div1">
+            <!--Navigation Div-->    
+        </div>
         
+        <div class="div2">
+            <!-- Clock Function Div -->
+            <div class="clockFunction">
+                <div class="container">
+                    <span id="hours">00</span>
+                    <span>:</span>
+                    <span id="minutes">00</span>
+                    <span>:</span>
+                    <span id="seconds">00</span>
+                    <span id="session">AM</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="div3"> 
+            <!-- ToDo list Function Div -->
+            <div class="ToDoList">
+		        <h1>To Do List</h1>
+		        <form id="new-task-form">
+			    <input 
+                    type="text" 
+                    name="new-task-input" 
+                    id="new-task-input" 
+                    placeholder="What do you have planned?" />
+			    <input 
+                    type="submit"
+                    id="new-task-submit" 
+                    value="Add task" />
+		        </form>
+	        <main>
+		        <section class="task-list">
+			    <h2>Tasks</h2>
+			    <div id="tasks">
+			    </div>
+		        </section>
+	        </main>
+            </div>
+        </div>
+
+        <div class="div4">
+            <!-- Calendar Div -->
+            <div class="googleCalendar">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&src=YW50aG9ueXRoZW93aWxsaWFtc0BnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <div class="div5">    
+            <!-- Google search function Div -->
+            <div class="gcse-search">   
+            </div>
+         </div>
+
     </div>
 
-    <!-- ToDo list Function div -->
-    <div class="ToDoList">
-		<h1>To Do List</h1>
-		<form id="new-task-form">
-			<input 
-				type="text" 
-				name="new-task-input" 
-				id="new-task-input" 
-				placeholder="What do you have planned?" />
-			<input 
-				type="submit"
-				id="new-task-submit" 
-				value="Add task" />
-		</form>
-	<main>
-		<section class="task-list">
-			<h2>Tasks</h2>
 
-			<div id="tasks">
-			</div>
-		</section>
-	</main>
+    <!--Script Links-->
+    <div>
+        <!-- Google search function link -->
+        <script async src="https://cse.google.com/cse.js?cx=21990ea6bab2c47ad"></script>
+        <!-- ToDo list Script link -->
+        <script src="js/toDoFunc.js"></script>
+        <!-- Clock Function link -->
+        <script src="js/clockFunc.js"></script>
     </div>
-
-
-
-    <!-- Calendar Div -->
-    <div class="googleCalendar">
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&src=YW50aG9ueXRoZW93aWxsaWFtc0BnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-
-    <!-- Google search function link -->
-	  <script async src="https://cse.google.com/cse.js?cx=21990ea6bab2c47ad"></script>
-    <!-- ToDo list Script link -->
-    <script src="js/toDoFunc.js"></script>
-    <!-- Clock Function link -->
-    <script src="js/clockFunc.js"></script>
 
   </body>
+
 </html>
